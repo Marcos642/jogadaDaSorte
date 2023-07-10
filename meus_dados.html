@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Meus Dados - Jogo da Sorte</title>
+    <style>
+        body {
+            background-color: #e8f5e9;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+        }
+        
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            margin: 0 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        
+        .tickets {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        .ticket {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ticket img {
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+        
+        .logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="Jogo da Sorte Logo" class="logo"></a>
+        <h1>Jogada da Sorte</h1>
+    </header>
+
+    <nav>
+        <a href="mais_bilhetes.html">Mais Bilhetes</a>
+        <a style="background-color: #4caf50; color: white;" href="meus_dados.html">Meus Dados</a>
+        <a href="#">Carrinho</a>
+        <a href="sobre_nos.html">Sobre Nós</a>
+    </nav>
+
+    <div class="center">
+        <h2>Meus Dados</h2>
+        <p><strong>Nome:</strong> João da Silva</p>
+        <p><strong>E-mail:</strong> joao@example.com</p>
+        <p><strong>Bilhetes Comprados:</strong></p>
+    </div>
+    
+    <div class="tickets center">
+        <div class="ticket">
+            <h3>Bilhete 5</h3>
+            <img src="img/bilhete1.jpg" alt="Bilhete 5">
+            <p>Descrição do bilhete 5</p>
+        </div>
+        
+        <div class="ticket">
+            <h3>Bilhete 8</h3>
+            <img src="img/bilhete1.jpg" alt="Bilhete 8">
+            <p>Descrição do bilhete 8</p>
+        </div>
+        
+        <div class="ticket">
+            <h3>Bilhete 12</h3>
+            <img src="img/bilhete1.jpg" alt="Bilhete 12">
+            <p>Descrição do bilhete 12</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Todos os direitos reservados &copy; 2023 Jogo da Sorte</p>
+    </footer>
+</body>
+</html>

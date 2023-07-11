@@ -6,20 +6,40 @@
     <style>
         body {
             background-color: #e8f5e9;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: red;
         }
         
         header {
-            text-align: center;
-            padding: 20px;
             background-color: #4caf50;
-            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+        
+        h1 {
+            color: white;
+            font-size: 32px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    
         nav {
             text-align: center;
-            margin: 20px 0;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        
+    
         nav a {
             text-decoration: none;
             color: #333;
@@ -27,8 +47,13 @@
             margin: 0 10px;
             background-color: #fff;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        
+    
+        nav a:hover {
+            background-color: #e0e0e0;
+        }
+            
         .tickets {
             display: flex;
             justify-content: center;
@@ -36,34 +61,74 @@
             width: 90%;
             margin: 0 auto;
         }
-        
+            
         .ticket {
-            background-color: #fff;
             padding: 20px;
             margin: 20px;
             border-radius: 5px;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
         }
         
+        .ticket:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+            
         .ticket img {
             max-width: 300px;
             margin-bottom: 10px;
         }
-        
+            
         .logo {
             display: block;
             margin: 20px auto;
             max-width: 200px;
         }
-
+    
         footer {
             text-align: center;
             padding: 20px;
             background-color: #4caf50;
             color: white;
         }
+    
+        /* Estilo personalizado para o botão */
+        button {
+            display: inline-block;
+            background-color: #4caf50;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button a {
+            color: #fff;
+        } 
+            
+        button:hover {
+            background-color: #45a049;
+        }
+    
+        @media (max-width: 800px) {
+            .tickets {
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+            }
+    
+            button {
+                font-size: 18px;
+            }
+        }
     </style>
+    
+    
+    
+    
 </head>
 <body>
     <header>
@@ -84,10 +149,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 1">
             <p>Descrição do bilhete 1</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
         
@@ -96,10 +161,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 2">
             <p>Descrição do bilhete 2</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
         
@@ -108,10 +173,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 3">
             <p>Descrição do bilhete 3</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
     </div>
@@ -122,10 +187,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 1">
             <p>Descrição do bilhete 1</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
         
@@ -134,10 +199,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 2">
             <p>Descrição do bilhete 2</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
         
@@ -146,10 +211,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 3">
             <p>Descrição do bilhete 3</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
     </div>
@@ -160,10 +225,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 1">
             <p>Descrição do bilhete 1</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
         
@@ -172,10 +237,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 2">
             <p>Descrição do bilhete 2</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
         
@@ -184,10 +249,10 @@
             <img src="img/bilhete1.jpg" alt="Bilhete 3">
             <p>Descrição do bilhete 3</p>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Comprar</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Comprar</a>
             </button>
             <button>
-                <a style="text-decoration: none; color: black" href="pagamento_pix.html">Adicionar ao carrinho</a>
+                <a style="text-decoration: none;" href="pagamento_pix.html">Adicionar ao carrinho</a>
             </button>
         </div>
     </div>
